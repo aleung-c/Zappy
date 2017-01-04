@@ -1,37 +1,48 @@
 #ifndef CLIENT_HPP
 # define CLIENT_HPP
 
-// General Includes
+// General includes
+# include <stdlib.h>
 # include <iostream>
+# include <sstream>
+# include <string>
 # include <stdio.h>
 # include <regex>
+# include <errno.h>
+
+// Connection includes.
+# include <sys/socket.h>
+# include <arpa/inet.h>
+# include <netdb.h>
+# include <fcntl.h>
+# include <sys/time.h>
+
+# define MSG_BUFSIZE 128
 
 // Connection related structure.
 typedef struct			s_ConnectionSettings
 {
-		std::string		TeamName;
-		int				Port;
-		std::string		HostName;
-}						t_ConnectionSettings;
+	std::string				TeamName;
+	int						Port;
+	std::string				HostName;
 
-// Game related structure.
-typedef struct		s_ClientPlayer
-{
 
-	// hp, level ... etc etc.
-
-}					t_ClientPlayer;
+}							t_ConnectionSettings;
 
 // Class definitions.
 class ClientInputHandler; // handle and check args.
 class ClientConnection; // communicate with the server.
-class ClientController;
-//class ClientAI;
+class ClientPlayer; // the actual game player.
+
+class ClientController; // main controller.
+
 
 // Class files includes.
 # include "CustomException.hpp"
 # include "ClientInputHandler.hpp"
 # include "ClientConnection.hpp"
+# include "ClientPlayer.hpp"
+
 # include "ClientController.hpp"
 
 

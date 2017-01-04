@@ -1,7 +1,23 @@
 #include "../includes/serveur.h"
 
-int main(void)
+int main(int argc, char **argv)
 {
-  printf("Hello serveur\n");
-  return (0);
+	t_serveur	serv;
+
+	// Init data
+	init_data(&serv);
+
+	// Parse arg and fill server data
+	get_input(&serv, argc, argv);
+
+	// Init server
+	init_serveur(&serv);
+
+	// Boucle du jeux
+	main_loop(&serv);
+
+	// Close les connections
+	close_all_connections(&serv);
+
+	return (0);
 }
