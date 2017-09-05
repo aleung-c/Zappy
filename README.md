@@ -53,3 +53,25 @@ The teamwork organization was also widely treated during this project, as with m
 code must be separated into sub modules, parts, or features, and the advancement of the project MUST be known at all times.
 To achieve this, we worked under a simplified version of agile workflow, using Trello, schematics, and flexible
 milestones.
+
+Also, almost all of the visual assets have been made by our team.
+
+---
+Visuals:
+
+![Alt text](./screens/zappy_1.jpg "zappy screenshot 1")
+![Alt text](./screens/zappy_2.jpg "zappy screenshot 2")
+![Alt text](./screens/zappy_3.jpg "zappy screenshot 3")
+![Alt text](./screens/zappy_4.jpg "zappy screenshot 4")
+![Alt text](./screens/zappy_5.jpg "zappy screenshot 5")
+
+Model meshes:
+
+![Alt text](./screens/zappy_6.jpg "zappy screenshot 6")
+![Alt text](./screens/zappy_7.jpg "zappy screenshot 7")
+
+Server-clients output examples:
+
+![Alt text](./screens/zappy_8.jpg "zappy screenshot 8")
+![Alt text](./screens/zappy_9.jpg "zappy screenshot 9")
+
